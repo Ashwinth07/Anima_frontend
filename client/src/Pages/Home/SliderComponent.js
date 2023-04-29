@@ -9,7 +9,7 @@ import "./Slider.css"
 function SliderContent() {
    const [List,setList]=useState([]);
     useEffect(() => {
-      axios.get('http://localhost:8000/api/product')
+      axios.get('https://rich-gray-macaw-sock.cyclic.app/api/product')
       .then((response) => 
        {
         setList(response.data)
